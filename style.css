@@ -1,0 +1,129 @@
+/*Général settings*/
+
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway/Raleway-VariableFont_wght.ttf") format("ttf"),
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+
+.page-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.nav_sections {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.nav_sections li {
+  margin: 1em;
+}
+
+.header_subscribe a {
+  width: 20%;
+  margin: 1em;
+  color: #0065FC;
+  font-weight: bold;
+}
+
+/* Search section */
+
+.search-form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.search-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  width: 30%;
+  height: 40px;
+}
+
+.search-icon_container {
+  background-color: #F2F2F2;
+  border-radius: 10px 0 0 10px;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input {
+  border: 1px #F2F2F2 solid;
+  width: 50%;
+  font-weight: bold;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.search-btn {
+  background-color: #0065FC;
+  color: #FFF;
+  font-weight: bold;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  width: 40%;
+}
+
+.search-item {
+  height: 100%;
+}
+
+.search-filters {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.search-filters ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.search-filters__item {
+  height: 100%;
+}
+
+.search-filters__item button {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: none;
+  border: 1px solid #F2F2F2;
+  height: 100%;
+  border-radius: 40px;
+}
+
+.search-filters__item_icon {
+  border-radius: 50%;
+  color:#0065FC;
+  background-color: #DEEBFF;
+}
