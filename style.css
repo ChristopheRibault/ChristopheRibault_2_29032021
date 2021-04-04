@@ -371,6 +371,7 @@ main {
   width: 100px;
   height: 100px;
   border-radius: 10px 0 0 10px;
+  object-fit: cover;
 }
 
 .card-rate {
@@ -558,6 +559,10 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+
+  .accomodation_card {
+    width: 95%;
+  }
 
   .accomodation_card > img {
     width: 100%;
