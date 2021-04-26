@@ -36,6 +36,11 @@ button {
   cursor: pointer;
 }
 
+.section-container {
+  max-width: 1440px;
+  margin: auto;
+}
+
 /* Header */
 
 .page-header {
@@ -87,7 +92,8 @@ button {
   justify-self: center;
 }
 
-.header-nav li:hover {
+.header-nav li:hover,
+.header-nav:active {
   color: #0065FC;
   border-top: 4px solid #0065FC;
 }
@@ -258,10 +264,6 @@ main {
   margin-bottom: 20px;
 }
 
-.accomodation-section > h2 {
-  margin: 20px;
-}
-
 .accomodation-cards {
   display: flex;
   flex-flow: row wrap;
@@ -294,7 +296,7 @@ main {
 
 .accomodation-card > img {
   border-radius: 10px 10px 0 0;
-  width: 250px;
+  min-width: 180px;
   height: 100px;
   object-fit: cover;
 }
@@ -433,18 +435,22 @@ main {
 /* Footer */
 
 .page-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: start;
   margin-top: 20px;
   padding: 30px;
   background-color: #f2f2f2;
 }
 
+.footer-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+}
+
 .page-footer__column {
   display: flex;
   flex-flow: column nowrap;
-  margin-right: 7rem;
+  width: 30%;
+  min-width: 270px;
 }
 
 .page-footer__column > ul {
@@ -466,11 +472,8 @@ main {
     display: none;
   }
 
-  .popular-section {
-    width: 48%;
-  }
-  .accomodation-section {
-    width: 48%;
+  .accomodation-section > h2 {
+    margin: 20px;
   }
 
   .activities-cards {
@@ -511,14 +514,13 @@ main {
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 865px) {
   .popular-section {
-    width: 38%;
+    width: 45%;
   }
   .accomodation-section {
-    width: 58%;
+    width: 51%;
   }
-
 }
 
 @media screen and (max-width: 710px) {
@@ -572,8 +574,13 @@ main {
     background-color: #FFF;
   }
 
-  .activities-section {
-    margin: 5px;
+  .accomodation-card {
+    width: 100%;
+  }
+
+  .activities-section, .accomodation-section {
+    max-width: 420px;
+    margin: auto;
   }
   
 }
